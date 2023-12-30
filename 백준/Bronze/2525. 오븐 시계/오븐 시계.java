@@ -6,15 +6,10 @@ public class Main {
         int min = sc.nextInt();
         int time = sc.nextInt();
 
-        if ((min + time) < 59) {
-            min += time;
-        } else {
-            hour += ((min + time) / 60);
-            min = (min + time) % 60;
-            if (hour > 23) {
-                hour -= 24;
-            }
-        }
+        int addHour = (min + time) / 60; 
+        int addMin = (min + time) % 60;
+        hour = (hour + addHour) % 24;
+        min = addMin;
         System.out.println(hour + " " + min);
     } 
-}
+} 
