@@ -1,5 +1,6 @@
 class Solution {
     public int solution(int hp) {
+        // 그리디 알고리즘 유형 
         
         // 처음 작성 코드 
         /*
